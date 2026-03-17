@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printastiq - Premium Printing Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-print"></i> Printastiq</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Premium Printing Solutions</h1>
+            <p>High-quality prints for your business needs. Fast delivery anywhere in Pakistan!</p>
+            <a href="#contact" class="cta-button">Order Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Business Cards</h3>
+                    <p>Professional business cards in various sizes and finishes</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-banner"></i>
+                    <h3>Banners</h3>
+                    <p>High-quality vinyl banners for events and promotions</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-box"></i>
+                    <h3>Packaging</h3>
+                    <p>Custom boxes and packaging solutions</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-calendar"></i>
+                    <h3>Calendars</h3>
+                    <p>Beautiful desk and wall calendars</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Popular Products</h2>
+            <div class="products-grid">
+                <div class="product-card" onclick="showPaymentModal()">
+                    <img src="https://via.placeholder.com/300x200/FF6B6B/FFFFFF?text=Business+Cards" alt="Business Cards">
+                    <h3>Business Cards</h3>
+                    <p>Rs. 500 / 100 cards</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product-card" onclick="showPaymentModal()">
+                    <img src="https://via.placeholder.com/300x200/4ECDC4/FFFFFF?text=Banners" alt="Banners">
+                    <h3>Banners</h3>
+                    <p>Rs. 2,000 / 3x6 ft</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product-card" onclick="showPaymentModal()">
+                    <img src="https://via.placeholder.com/300x200/45B7D1/FFFFFF?text=Packaging" alt="Packaging">
+                    <h3>Custom Boxes</h3>
+                    <p>Rs. 1,500 / 100 pcs</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Printastiq</h2>
+                    <p>We are Pakistan's leading printing company providing high-quality printing solutions for businesses and individuals. Fast delivery and best prices guaranteed!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+92 337 8293557</p>
+                            <p>+92 311 3292868</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>info@printastiq.com</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="tel" placeholder="Your Phone" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Payment Details</h2>
+            <div class="payment-info">
+                <h3>Bank Transfer to:</h3>
+                <p><strong>SAMREEN AMIN (ASAAN AC)</strong></p>
+                <p><strong>Meezan Bank - Dhoraji Branch</strong></p>
+                <p><strong>Account Number: 01220107088691</strong></p>
+                <p><strong>IBAN: PK19MEZN0001220107088691</strong></p>
+                <div class="payment-note">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Payment confirm کرنے کے بعد WhatsApp پر screenshot بھیجیں: +92 337 8293557</p>
+                </div>
+            </div>
+            <button class="confirm-btn" onclick="closePaymentModal()">Payment Confirmed</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Printastiq. All rights reserved. | Fast Printing Solutions in Pakistan</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
